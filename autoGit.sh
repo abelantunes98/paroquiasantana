@@ -1,3 +1,4 @@
 git add .
-read "Digite o comentario: " COMENTARIO                                     
-git commit -m COMENTARIO
+echo -n "Digite o comentario: "
+read comentario                                    
+git commit -m $comentario
