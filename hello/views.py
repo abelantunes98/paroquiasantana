@@ -18,3 +18,5 @@ def db(request):
 
     return render(request, 'db.html', {'greetings': greetings})
 
+def menu(request):
+    return render(request, 'menu.html')
