@@ -5,5 +5,8 @@ from .models import Greeting
 
 # Create your views here.
 
-def menu(request):
-    return render(request, 'menu.html')
+def index(request):
+    return render(request, 'index.html')
+
+def news(request):
+    return render(request, 'news.html')
