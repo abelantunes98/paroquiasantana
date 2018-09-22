@@ -9,4 +9,10 @@ def index(request):
     return render(request, 'index.html')
 
 def news(request):
-    return render(request, 'news.html')
+
+    greeting = Greeting()
+    greeting.save()
+
+    greetings = Greeting.objects.all()
+
+    return render(request, 'news.html', {'greetings': greetings})
